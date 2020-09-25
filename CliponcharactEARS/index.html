@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>ClipOnCharactEARS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="CSS/home.css">
+<script src = "js/gallery.js"></script>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+  
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+    <h3 class="w3-padding-64 w3-center"><b>ClipOnCharactEARS</b></h3>
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">GALLERY</a> 
+    <a href="aboutus.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a> 
+    <a href="shop.html" onclick="w3_close()" class="w3-bar-item w3-button">SHOP</a>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  </nav>
+  
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+    <span class="w3-left w3-padding">ClipOnCharactEARS</span>
+    <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+  </header>
+  
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+  
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:300px">
+    
+    <!-- Push down content on small screens --> 
+    <div class="w3-hide-large" style="margin-top:83px"></div>
+    
+    <!-- Photo grid -->
+    <div id="container">
+      <!--page one-->  
+      <div id="Page1">
+        <div class="w3-row">
+          <div class="w3-third">
+            <img src="Images/pooh.jpeg" style="width:100%" onclick="onClick(this)" alt="Yellow bear ears">
+            <img src="Images/piglet.jpeg" style="width:100%" onclick="onClick(this)" alt="Pink piglet ears">
+            <img src="Images/mouse.jpeg" style="width:100%" onclick="onClick(this)" alt="Furry black mouse ears">
+          </div>
+          
+          <div class="w3-third">
+            <img src="Images/nook.jpeg" style="width:100%" onclick="onClick(this)" alt="Raccoon ears with light pink center">
+            <img src="Images/ewok.jpeg" style="width:100%" onclick="onClick(this)" alt="Ewok ears with light brown fur and a dark center">
+            <img src="Images/poohtail.jpeg" style="width:100%" onclick="onClick(this)" alt="Round yellow bear tail">
+          </div>
+          
+          <div class="w3-third">
+            <img src="Images/lotso.jpeg" style="width:100%" onclick="onClick(this)" alt="Pink bear ears with light grey center">
+            <img src="Images/tigger.jpeg" style="width:100%" onclick="onClick(this)" alt="Orange tiger ears with cream center">
+            <img src="Images/gopher.jpeg" style="width:100%" onclick="onClick(this)" alt="Light brown gopher ears with dark brown center">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Pagination 
+        <div class="w3-center w3-padding-32">
+          <div class="w3-bar">
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+            <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+          </div>
+        </div>
+      -->
+      
+      <!-- Modal for full size images on click-->
+      <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+        <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+          <img id="img01" class="w3-image">
+          <p id="caption"></p>
+        </div>
+      </div>
+    </div>
+    
+    
+    <!-- Footer -->
+    <footer>
+      <div class="w3-row" style="background-color: #e6db6a;">
+        
+        <h4>Follow us on social media!
+          <a href="https://www.facebook.com/cliponcharactears" target="_blank" class="fa fa-facebook"></a>
+          
+          <a href="https://www.instagram.com/cliponcharactears/" target="_blank" class="fa fa-instagram"></a>
+        </h4>      
+      </div>  
+      
+      
+      <div class="w3-row w3-center w3-black">
+        Created by Karen Bohnen<br>
+        Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>   
+      </div>
+      
+    </footer>
+    
+  </div>  
+  <!-- End page content -->
+</body>
+</html>
